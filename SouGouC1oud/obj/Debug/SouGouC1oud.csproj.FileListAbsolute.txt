@@ -1,0 +1,7 @@
+F:\github\SouGouC1oud\SouGouC1oud\SouGouC1oud\bin\Debug\SouGouC1oud.exe
+F:\github\SouGouC1oud\SouGouC1oud\SouGouC1oud\bin\Debug\SouGouC1oud.pdb
+F:\github\SouGouC1oud\SouGouC1oud\SouGouC1oud\obj\Debug\SouGouC1oud.Properties.Resources.resources
+F:\github\SouGouC1oud\SouGouC1oud\SouGouC1oud\obj\Debug\SouGouC1oud.csproj.GenerateResource.Cache
+F:\github\SouGouC1oud\SouGouC1oud\SouGouC1oud\obj\Debug\SouGouC1oud.exe
+F:\github\SouGouC1oud\SouGouC1oud\SouGouC1oud\obj\Debug\SouGouC1oud.pdb
+F:\github\SouGouC1oud\SouGouC1oud\SouGouC1oud\obj\Debug\SouGouC1oud.SogouC1oud.resources
