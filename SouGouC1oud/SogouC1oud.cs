@@ -55,16 +55,6 @@ namespace SogouC1oud
 
                 if (mc.Count > 0)//如果匹配上了，肯定取最上面一个关机命令的位置
                 {
-                    string tmp = mc[0].Value;
-                    tmp = html.Substring(mc[0].Index, 22);//获取关机命令后的100个字符，里面包含了这篇随笔发表的时间
-                    tmp = tmp.Replace("&nbsp;", " ");
-                    DateTime dt = Convert.ToDateTime(tmp.Split('|')[1]);
-                    DateTime now = DateTime.Now;
-                    if (abs(DateDiff("tms", now, dt)) < 2 * wait)//如果是最近10分钟发出的命令，执行
-                    {
-                        //Console.Write("shutdown");
-                        //Cmd("shutdown -s -f -t 0");
-                    }
                     Cmd("shutdown -s -f -t 0");
                 }
                 #endregion
